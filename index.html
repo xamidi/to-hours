@@ -7,8 +7,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<style type="text/css">body,button,input{line-height:inherit}a,button,input{color:inherit}body,h1,h2,h3,h4,h5,h6,p{margin:0}#applyInputButton,input{background-color:rgba(64,64,64,.4)}#applyInputButton:hover,button:hover{background-color:rgba(64,64,64,.8)}*{box-sizing:border-box;border:0 solid #e5e7eb}h1,h2,h3,h4,h5,h6{font-size:inherit}code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}input::placeholder{opacity:1;color:#9ca3af}.mx-auto{margin-left:auto;margin-right:auto}.max-w-7xl{max-width:80rem}.tracking-widest{letter-spacing:.1em}body,h1{color:rgb(245 245 245)}body{background-color:rgb(23 23 23)}[type=button],[type=reset],[type=submit],button{background-color:transparent;background-image:none}.place-items-center{place-items:center}.h-6{height:1.5rem}.h-7{height:1.75rem}.w-10{width:2.5rem}.h-10{height:2.5rem}.w-14{width:3.5rem}.h-14{height:3.5rem}.rounded-lg{border-radius:.5rem}.top-2{top:.5rem}.right-2{right:.5rem}.right-12{right:3rem}.flex-1{flex:1 1 0}.h-full{height:100%}.relative{position:relative}.self-center{align-self:center}.gap-x-2{column-gap:.5rem}.absolute{position:absolute}.border{border-width:1px}.w-full{width:100%}.p-4{padding:1rem}button,input{font-family:inherit}svg{vertical-align:middle}[role=button],button{cursor:pointer}#input button:hover{transform:scale(1.05)}.flex-col{flex-direction:column}.min-h-screen{min-height:100vh}.flex{display:flex}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Comfortaa,sans-serif,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal}h1{line-height:1;font-size:3rem}.mt-1{margin-top:.25rem}@media (min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width:768px){.md\:w-4\/5{width:80%}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width:1024px){.lg\:mb-16{margin-bottom:4rem}.lg\:mt-8{margin-top:2rem}}</style>
-<script type="text/javascript">
+<style>body,button,input{line-height:inherit}a,button,input{color:inherit}body,h1,h2,h3,h4,h5,h6,p{margin:0}#applyInputButton,input{background-color:rgba(64,64,64,.4)}#applyInputButton:hover,button:hover{background-color:rgba(64,64,64,.8)}*{box-sizing:border-box;border:0 solid #e5e7eb}h1,h2,h3,h4,h5,h6{font-size:inherit}code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}input::placeholder{opacity:1;color:#9ca3af}.mx-auto{margin-left:auto;margin-right:auto}.max-w-7xl{max-width:80rem}.tracking-widest{letter-spacing:.1em}body,h1{color:rgb(245 245 245)}body{background-color:rgb(23 23 23)}[type=button],[type=reset],[type=submit],button{background-color:transparent;background-image:none}.place-items-center{place-items:center}.h-6{height:1.5rem}.h-7{height:1.75rem}.w-10{width:2.5rem}.h-10{height:2.5rem}.w-14{width:3.5rem}.h-14{height:3.5rem}.rounded-lg{border-radius:.5rem}.top-2{top:.5rem}.right-2{right:.5rem}.right-12{right:3rem}.flex-1{flex:1 1 0}.h-full{height:100%}.relative{position:relative}.self-center{align-self:center}.gap-x-2{column-gap:.5rem}.absolute{position:absolute}.border{border-width:1px}.w-full{width:100%}.p-4{padding:1rem}button,input{font-family:inherit}svg{vertical-align:middle}[role=button],button{cursor:pointer}#input button:hover{transform:scale(1.05)}.flex-col{flex-direction:column}.min-h-screen{min-height:100vh}.flex{display:flex}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Comfortaa,sans-serif,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal}h1{line-height:1;font-size:3rem}.mt-1{margin-top:.25rem}@media (min-width:640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width:768px){.md\:w-4\/5{width:80%}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width:1024px){.lg\:mb-16{margin-bottom:4rem}.lg\:mt-8{margin-top:2rem}}</style>
+<script>
 window.onload = function() {
 	document.getElementById("clearInputButton").addEventListener("click", function() {
 		const txtInput = document.getElementById("txtInput");
@@ -47,13 +47,13 @@ window.onload = function() {
 	});
 }
 </script>
-<title>Duration Converter</title>
+<title>Duration Converter (Days-Hours:Minutes:Seconds to Hours)</title>
 </head>
 <body class="flex flex-col min-h-screen">
 	<header class="w-full lg:mb-16 lg:mt-8 max-w-7xl mx-auto sm:px-6">
 	<h1>Duration Converter</h1>
-	<br/>
-	<code style="margin-left:6px">D⁺-H⁺:M⁺:S⁺↦ H⁺[.H⁺], e.g. 42-1:33:7 ↦ 1009.5519444…</code>
+	<br>
+	<code style="margin-left:6px">D⁺-H⁺:M⁺:S⁺ ↦ H⁺[.H⁺], e.g. 42-1:33:7 ↦ 1009.5519444…</code>
 	</header>
 	<div class="flex flex-col">
 		<div class="flex gap-x-2 h-14 md:w-4/5 self-center w-full">
